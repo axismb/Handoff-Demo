@@ -11,18 +11,18 @@ using UIKit;
 
 namespace HandoffDemoWatchKitExtension
 {
-	[Register ("InterfaceController")]
-	partial class InterfaceController
+	[Register ("VehicleRowController")]
+	partial class VehicleRowController
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		WatchKit.WKInterfaceTable vehicleTable { get; set; }
+		WatchKit.WKInterfaceLabel VehicleLbl { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (vehicleTable != null) {
-				vehicleTable.Dispose ();
-				vehicleTable = null;
+			if (VehicleLbl != null) {
+				VehicleLbl.Dispose ();
+				VehicleLbl = null;
 			}
 		}
 	}

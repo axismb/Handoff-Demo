@@ -78,6 +78,7 @@
     <Compile Include="InterfaceController.designer.cs">
       <DependentUpon>InterfaceController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vehicle.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.AppExtension.CSharp.targets" />
   <ItemGroup>

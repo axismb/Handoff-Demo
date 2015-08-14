@@ -16,7 +16,7 @@ namespace HandoffDemoWatchKitExtension
 		public override void Awake (NSObject context)
 		{
 			base.Awake (context);
-			this._Vehicle = Vehicle.GetVehicles ().First (x => x.VIN);
+			this._Vehicle = Vehicle.GetVehicles ().First (x => x.VIN == (string)(NSString)context);
 		}
 
 		public override void WillActivate ()

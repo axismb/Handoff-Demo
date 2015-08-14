@@ -79,6 +79,14 @@
       <DependentUpon>InterfaceController.cs</DependentUpon>
     </Compile>
     <Compile Include="Vehicle.cs" />
+    <Compile Include="VehicleController.cs" />
+    <Compile Include="VehicleController.designer.cs">
+      <DependentUpon>VehicleController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleRowController.cs" />
+    <Compile Include="VehicleRowController.designer.cs">
+      <DependentUpon>VehicleRowController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.AppExtension.CSharp.targets" />
   <ItemGroup>

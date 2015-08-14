@@ -27,7 +27,7 @@ namespace HandoffDemoWatchKitExtension
 
 		public override string ToString ()
 		{
-			return String.Format ("'{0} {1} {2}", this.Year % 2000, this.Manufacturer, this.Model);
+			return String.Format ("'{0:00} {1} {2}", this.Year % 2000, this.Manufacturer, this.Model);
 		}
 
 		/// <summary>

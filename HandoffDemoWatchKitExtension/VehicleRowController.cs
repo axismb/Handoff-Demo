@@ -10,5 +10,10 @@ namespace HandoffDemoWatchKitExtension
 		public VehicleRowController (IntPtr handle) : base (handle)
 		{
 		}
+
+		public void Update(Vehicle v)
+		{
+			this.VehicleLbl.SetText (v.ToString ());
+		}
 	}
 }

@@ -22,10 +22,27 @@ namespace HandoffDemo
 			// Override point for customization after application launch.
 			// If not required for your application you can safely delete this method
 
-			// Code to start the Xamarin Test Cloud Agent
-			#if ENABLE_TEST_CLOUD
-			Xamarin.Calabash.Start();
-			#endif
+			return true;
+		}
+
+		/// <summary>
+		/// Should we continue the UserActivity? 
+		/// </summary>
+		/// <returns>True/False</returns>
+		/// <param name="application">Application.</param>
+		/// <param name="userActivityType">User activity type.</param>
+		public override bool WillContinueUserActivity (UIApplication application, string userActivityType)
+		{
+			return true;
+		}
+
+		public override bool ContinueUserActivity (UIApplication application, NSUserActivity userActivity, UIApplicationRestorationHandler completionHandler)
+		{
+			/// Get any properties we want from UserInfo dictionary. 
+			string vin = userActivity.UserInfo ["VIN"].ToString ();
+
+			/// Trigger event
+			HandoffOccurred?.Invoke (this, new HandoffArgs (vin));
 
 			return true;
 		}

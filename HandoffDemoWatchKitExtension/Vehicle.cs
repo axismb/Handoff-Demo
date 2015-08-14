@@ -25,6 +25,11 @@ namespace HandoffDemoWatchKitExtension
 			this.Year = year;
 		}
 
+		public override string ToString ()
+		{
+			return String.Format ("'{0} {1} {2}", this.Year % 2000, this.Manufacturer, this.Model);
+		}
+
 		/// <summary>
 		/// Get array of sample vehicles.
 		/// </summary>

@@ -90,6 +90,7 @@
       <DependentUpon>CarsViewCtrl.cs</DependentUpon>
     </Compile>
     <Compile Include="Vehicle.cs" />
+    <Compile Include="HandoffArgs.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>

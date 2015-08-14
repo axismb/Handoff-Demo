@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using UIKit;
+using System;
 
 namespace HandoffDemo
 {
@@ -9,6 +10,7 @@ namespace HandoffDemo
 	public class AppDelegate : UIApplicationDelegate
 	{
 		// class-level declarations
+		public event EventHandler<HandoffArgs> HandoffOccurred = delegate {};
 
 		public override UIWindow Window {
 			get;
